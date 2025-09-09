@@ -1,4 +1,4 @@
 .container {
-  overflow-x: hidden;
+  overflow-x: auto;
   margin-top: 1rem;
 }

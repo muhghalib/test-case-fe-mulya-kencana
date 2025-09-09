@@ -4,8 +4,7 @@ import { Header } from "./Header";
 import { Information } from "./Information";
 import { User } from "@/types/data/user";
 
-import { Card, CardContent, CardHeader } from "@/components/atoms/Card";
-import { Divider } from "@/components/layouts/main/Divider";
+import { Divider } from "@/components/atoms/Divider";
 
 type Props = {
   params: Promise<{ id: string }>;
