@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.mainContainer {
+  height: fit-content;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mainInnerWrapper {
+  padding: 24px 32px;
+}

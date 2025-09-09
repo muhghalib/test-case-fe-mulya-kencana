@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Gaming",
+    "price": 15000000
+  },
+  {
+    "id": 2,
+    "name": "Smartphone 5G",
+    "price": 8000000
+  },
+  {
+    "id": 3,
+    "name": "Headphone Wireless",
+    "price": 1200000
+  }
+]

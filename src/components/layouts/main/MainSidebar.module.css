@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 20rem;
+  height: 100svh;
+  padding: 24px;
+  background-color: var(--background);
+  border-right: 1px solid var(--border);
+  z-index: 10;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+}
+
+.innerWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.logoWrapper {
+  padding: 0px 12px;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.linksItem {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.toggleClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 4px 0px;
+}
+
+.linksItem.active {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .container.active {
+    display: none;
+  }
+
+  .toggleClose {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 20rem;
+    height: 100vh;
+    transform: translateX(-100%);
+    border-right: 1px solid var(--border);
+    background-color: var(--background);
+    z-index: 10;
+    padding: 16px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .container.active {
+    transform: translateX(0);
+  }
+}
